@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="grey lighten-4">
+    <nav class="blue darken-2 main-navigation">
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="row">
+                    <ul class="left">
+                        <li>
+                            <a href="#" data-target="side-menu" class="btn waves-effect sidenav-trigger conf-btn beauty-btn">Configuration</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn waves-effect beauty-btn start-test">Start test</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn waves-effect beauty-btn stop-test">Stop test</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn waves-effect beauty-btn buildchart-btn">Display results</a>
+                        </li>
+                    </ul>
+
+                    <div class="left">
+                        <span>Test status:</span>
+                        <span class="test-info">not running</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="side-menu" class="sidenav sidenav-crutch">
+                <form action="#" class="col s12">
+                    <div class="input-field">
+                        <input id="nas-aaa-server" name="nas-aaa-server" type="text" class="validate">
+                        <label for="nas-aaa-server" class="input-label">NAS AAA server</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="generator-threads-number" id="generator-threads-number" class="validate">
+                        <label for="generator-threads-number" class="input-label">Generator threads number: </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="number-of-retransmits" id="number-of-retransmits" class="validate">
+                        <label for="number-of-retransmits" class="input-label">Number of retransmits:</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="radius-response-timeout" id="radius-response-timeout" class="validate">
+                        <label for="radius-response-timeout" class="input-label">Radius response timeout (ms):</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="radius-auth-key" id="radius-auth-key" class="validate">
+                        <label for="radius-auth-key" class="input-label">Radius auth key:</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="estimated-testing-time" id="estimated-testing-time" class="validate">
+                        <label for="estimated-testing-time" class="input-label">Testing time (estimated) (EST):</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="estimated-performance" id="estimated-performance" class="validate">
+                        <label for="estimated-performance" class="input-label">Estimated performance (CPS):</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="total-calls-to-generate" id="total-calls-to-generate" class="validate">
+                        <label for="total-calls-to-generate" class="input-label">Total calls to generate (EST*CPS):</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="admissible-throughput-percent" id="admissible-throughput-percent" class="validate">
+                        <label for="admissible-throughput-percent" class="input-label">Admissible throughput percent</label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="authentication" class="filled-in" id="authentication">
+                            <span>Send Authentication</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="authorization" class="filled-in" id="authorization">
+                            <span>Send Authorization</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="send-start-accounting" class="filled-in" id="send-start-accounting">
+                            <span>Send Start Accounting</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="sip-routing" class="filled-in" id="sip-routing">
+                            <span>Sip Routing</span>
+                        </label>
+                    </div>
+                    <div>
+                        <a class="btn submit-btn light-blue darken-2">submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <canvas></canvas>
+            </div>
+            <div class="col s12 table">
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app.ajax.js"></script>
+    <script src="js/app.chart.js"></script>
+    <script src="js/app.utilities.js"></script>
+    <script src="js/app.data.display.js"></script>
+    <script src="js/app.form.js"></script>
+    <script src="js/app.test.js"></script>
+</body>
+
+</html>

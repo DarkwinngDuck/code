@@ -1,0 +1,27 @@
+.submit-btn {
+    display: block;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.sidenav-crutch {
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.main-navigation .conf-btn {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    margin: 14px 15px;
+}
+
+.beauty-btn {
+    background: #fff;
+    color: #0288d1;
+}
+
+.beauty-btn:hover,
+.beauty-btn:focus {
+    background: hsla(0, 0%, 95%, 1);
+}

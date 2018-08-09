@@ -1,0 +1,4 @@
+.table {
+    display: none;
+    transition: display 2s ease-in;
+}

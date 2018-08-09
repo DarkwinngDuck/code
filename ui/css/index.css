@@ -1,0 +1,19 @@
+@import 'reset.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css';
+@import 'sidenav.css';
+@import 'table.css';
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.test-info {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.disabled-btn {
+    background: #ddd;
+}
