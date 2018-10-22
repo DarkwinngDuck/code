@@ -1,0 +1,1 @@
+This is a JavaScript version of the application I  developed at the summer internship at PortaOne. There is no API, so you can just check the code quality.
