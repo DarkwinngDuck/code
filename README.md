@@ -1,1 +1,1 @@
-This is a JavaScript version of the application I  developed at the summer internship at PortaOne. There is no API, so you can just check the code quality.
+This is a JavaScript version of the application I  developed at the summer internship at PortaOne. There is no API, so you can just check the code quality. Next version of this project with some stub API you can check here: https://github.com/DarkwinngDuck/intapp
